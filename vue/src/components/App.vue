@@ -5,6 +5,7 @@
   >
     <RouterView v-if="isActive" />
     <ScreenSaver v-else />
+    <GalleryPage :images="images"/>
     <ModalContainer />
   </div>
 </template>
