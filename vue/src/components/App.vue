@@ -13,16 +13,80 @@
 <script>
 import ModalContainer from "@/components/parts/ModalContainer"
 import ScreenSaver from "@/components/modals/ScreenSaver.vue"
+import GalleryPage from "./pages/GalleryPage.vue";
 
 export default {
   components: {
     ModalContainer,
-    ScreenSaver
+    ScreenSaver,
+    GalleryPage
   },
   data () {
     return {
       isActive: true,
-      timer: null
+      timer: null,
+      images: [
+        {
+          id: 1,
+          img: 'https://digital.ihg.com/is/image/ihg/kimpton-amsterdam-7775502464-2x1',
+          title: 'Заголовок 1',
+          description: 'Описание 1'
+        },
+        {
+          id: 2,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663091191_10-mykaleidoscope-ru-p-gollandiya-vkontakte-12.jpg',
+          title: 'Заголовок 2',
+          description: 'Описание 2'
+        },
+        {
+          id: 3,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663116593_15-mykaleidoscope-ru-p-stolitsa-gollandii-dostoprimechatelnosti-16.jpg',
+          title: 'Заголовок 3',
+          description: 'Описание 3'
+        },
+        {
+          id: 4,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663116505_5-mykaleidoscope-ru-p-stolitsa-gollandii-dostoprimechatelnosti-6.jpg',
+          title: 'Заголовок 4',
+          description: 'Описание 4'
+        },
+        {
+          id: 5,
+          img: 'https://mobimg.b-cdn.net/v3/fetch/35/35396356823d083b4d7120941364cd99.jpeg',
+          title: 'Заголовок 5',
+          description: 'Описание 5'
+        },
+        {
+          id: 10,
+          img: 'https://digital.ihg.com/is/image/ihg/kimpton-amsterdam-7775502464-2x1',
+          title: 'Заголовок 1',
+          description: 'Описание 1'
+        },
+        {
+          id: 20,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663091191_10-mykaleidoscope-ru-p-gollandiya-vkontakte-12.jpg',
+          title: 'Заголовок 2',
+          description: 'Описание 2'
+        },
+        {
+          id: 30,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663116593_15-mykaleidoscope-ru-p-stolitsa-gollandii-dostoprimechatelnosti-16.jpg',
+          title: 'Заголовок 3',
+          description: 'Описание 3'
+        },
+        {
+          id: 40,
+          img: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663116505_5-mykaleidoscope-ru-p-stolitsa-gollandii-dostoprimechatelnosti-6.jpg',
+          title: 'Заголовок 4',
+          description: 'Описание 4'
+        },
+        {
+          id: 50,
+          img: 'https://mobimg.b-cdn.net/v3/fetch/35/35396356823d083b4d7120941364cd99.jpeg',
+          title: 'Заголовок 5',
+          description: 'Описание 5'
+        }
+      ]
     }
   },
   mounted() {
